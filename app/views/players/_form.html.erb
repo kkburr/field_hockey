@@ -1,0 +1,53 @@
+<%= form_for(@player) do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+      <% @player.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_type %><br>
+    <%= f.number_field :contact_type %>
+  </div>
+  <div class="field">
+    <%= f.label :current_school %><br>
+    <%= f.text_field :current_school %>
+  </div>
+  <div class="field">
+    <%= f.label :current_grade %><br>
+    <%= f.number_field :current_grade %>
+  </div>
+  <div class="field">
+    <%= f.label :birthdate %><br>
+    <%= f.text_field :birthdate %>
+  </div>
+  <div class="field">
+    <%= f.label :played_other_sport %><br>
+    <%= f.number_field :played_other_sport %>
+  </div>
+  <div class="field">
+    <%= f.label :other_sport %><br>
+    <%= f.text_field :other_sport %>
+  </div>
+  <div class="field">
+    <%= f.label :allergies %><br>
+    <%= f.text_field :allergies %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

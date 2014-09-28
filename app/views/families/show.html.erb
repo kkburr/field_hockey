@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Parent one name:</strong>
+  <%= @family.parent_one_name %>
+</p>
+
+<p>
+  <strong>Parent two name:</strong>
+  <%= @family.parent_two_name %>
+</p>
+
+<p>
+  <strong>Email one:</strong>
+  <%= @family.email_one %>
+</p>
+
+<p>
+  <strong>Email two:</strong>
+  <%= @family.email_two %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @family.region %>
+</p>
+
+<p>
+  <strong>High school:</strong>
+  <%= @family.high_school %>
+</p>
+
+<%= link_to 'Edit', edit_family_path(@family) %> |
+<%= link_to 'Back', families_path %>

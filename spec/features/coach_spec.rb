@@ -15,6 +15,7 @@ feature 'Coaches do things' do
 		# visit '/sessions/new'
 		fill_in 'Email', :with => coach_one.email
 		fill_in 'Password', :with => coach_one.password
+	end
 
 	scenario 'Coach signs in' do
 		expect(page).to have_content('Signed In!')

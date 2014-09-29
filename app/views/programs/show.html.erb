@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Grades:</strong>
+  <%= @program.grades %>
+</p>
+
+<p>
+  <strong>Description short:</strong>
+  <%= @program.description_short %>
+</p>
+
+<p>
+  <strong>Description long:</strong>
+  <%= @program.description_long %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @program.location %>
+</p>
+
+<p>
+  <strong>Head coach:</strong>
+  <%= @program.head_coach %>
+</p>
+
+<%= link_to 'Edit', edit_program_path(@program) %> |
+<%= link_to 'Back', programs_path %>

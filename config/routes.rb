@@ -1,6 +1,16 @@
 Rails.application.routes.draw do
-  devise_for :players
+  devise_for :coaches
+  devise_for :admins
   devise_for :families
+  
+  resources :admins
+
+  resources :coaches
+
+  resources :programs
+
+  resources :venues
+
   resources :players
 
   resources :families
